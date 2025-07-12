@@ -34,7 +34,8 @@ const CoachCard = ({ coach }: CoachCardProps) => {
     <div className={styles.card}>
       <div className={styles.imageContainer}>
         <Image
-          src={photoUrls[getPhotoIndex(coach.id)]}
+          // src={photoUrls[getPhotoIndex(coach.id)]}
+          src={coach.image}
           alt={coach.name}
           width={300}
           height={400}
