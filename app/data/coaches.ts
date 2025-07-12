@@ -22,12 +22,12 @@ export interface Coach {
       id: 'ilayda-naz-anli',
       name: 'İlayda Naz Anlı',
       university: 'İTÜ',
-      department: 'Makine Mühendisliği',
+      department: 'Malzeme Metalürji Mühendisliği',
       aytType: 'Sayısal',
-      turkeyRank: 12334,
+      turkeyRank: 12136,
       year: 2023,
       examType: 'AYT',
-      rank: '12.334.ncüsü',
+      rank: '12.136.ncüsü',
       image: '/images/coaches/ilayda-naz-anli.jpg',
       bio: 'Matematik ve fizik korkusunu yenelim, problem çözme sanatını birlikte keşfedelim. Sınavda karşılaştığın her soruyu çözebilecek özgüveni sana kazandıracağım.',
       goals: [
@@ -36,9 +36,7 @@ export interface Coach {
         'Sınav kaygısını yönetmeyi öğretmek'
       ],
       achievements: [
-        'Sayısal 12.334.ncüsü',
-        '50+ öğrenciyi hedeflenen üniversiteye yerleştirme',
-        'Matematik olimpiyatı il birinciliği'
+        'Sayısal 12.136.ncüsü',
       ],
       teachingApproach: 'Öğrencilerimin öğrenme stillerini analiz ederek, her birine özel çalışma programları hazırlıyorum. Problem çözme tekniklerini adım adım öğreterek, karmaşık konuları basit parçalara ayırıyorum.',
       focusAreas: ['Matematik', 'Fizik', 'Kimya', 'Problem Çözme Teknikleri'],
@@ -50,10 +48,10 @@ export interface Coach {
       university: 'Boğaziçi Üniversitesi',
       department: 'Fizik',
       aytType: 'Sayısal',
-      turkeyRank: 9117,
+      turkeyRank: 9194,
       year: 2024,
       examType: 'AYT',
-      rank: '9.117.ncisi',
+      rank: '9.194.ncisi',
       image: '/images/coaches/sevda-dilara-kuyuk.jpg',
       bio: 'Fiziğin büyüsünü keşfet, doğanın dilini anla. Sayısal alanda başarının anahtarı analitik düşünce ve güçlü problem çözme. Birlikte bu yolculuğa çıkalım.',
       goals: [
@@ -62,25 +60,23 @@ export interface Coach {
         'Problem çözme becerilerini güçlendirmek'
       ],
       achievements: [
-        'Sayısal 9.117.ncisi',
-        'Fizik olimpiyatı bölge birinciliği',
-        '40+ öğrenciyi tercih ettikleri bölümlere yerleştirme'
+        'Sayısal 9.194.ncisi',
       ],
       teachingApproach: 'Fizik konularını günlük hayatla ilişkilendirerek öğretiyorum. Öğrencilerimin teorik bilgiyi pratikte görmelerini sağlamak için deneysel yaklaşımlar kullanıyorum.',
       focusAreas: ['Fizik', 'Matematik', 'Kimya', 'Analitik Düşünme'],
       isFounder: true
     },
     {
-      id: 'mehmet-kaya',
-      name: 'Mehmet Kaya',
-      university: 'ODTÜ',
-      department: 'Makine Mühendisliği',
+      id: 'barkin-sezgin',
+      name: 'Barkın Sezgin',
+      university: 'İTÜ',
+      department: 'Elektrik Mühendisliği',
       aytType: 'Sayısal',
-      turkeyRank: 23,
-      year: 2023,
+      turkeyRank: 2637,
+      year: 2024,
       examType: 'AYT',
-      rank: '23.ncüsü',
-      image: '/images/coaches/mehmet-kaya.jpg',
+      rank: '2637.ncisi',
+      image: '/images/coaches/barkin-sezgin.jpg',
       bio: 'Mühendislik bakış açısıyla fizik ve matematiği hayata geçiriyorum. Teorik bilgiyi pratiğe dönüştürme sanatını öğrenecek, her problemi çözebileceksin.',
       goals: [
         'Fizik ve matematik alanında sağlam temel oluşturmak',
@@ -88,74 +84,45 @@ export interface Coach {
         'Mühendislik düşüncesi kazandırmak'
       ],
       achievements: [
-        'Sayısal 23.ncüsü',
-        'ODTÜ mezuniyet birinciliği',
-        '35+ öğrenciyi mühendislik fakültelerine yerleştirme'
+        'Sayısal 2637.ncisi',
       ],
       teachingApproach: 'Teorik bilgileri pratik uygulamalarla destekliyorum. Öğrencilerimin fizik ve matematik konularını günlük hayattan örneklerle kavramalarını sağlıyorum.',
       focusAreas: ['Fizik', 'Matematik', 'Mühendislik Temelleri', 'Analitik Düşünme']
     },
     {
-      id: 'ayse-ozturk',
-      name: 'Ayşe Öztürk',
-      university: 'Ankara Üniversitesi',
-      department: 'Tarih',
-      aytType: 'Sözel',
-      turkeyRank: 12,
+      id: 'mitat-picak',
+      name: 'Mitat Piçak',
+      university: 'İTÜ',
+      department: 'Elektrik Mühendisliği',
+      aytType: 'Sayısal',
+      turkeyRank: 10.211,
       year: 2023,
       examType: 'AYT',
-      rank: '12.ncisi',
-      image: '/images/coaches/ayse-ozturk.jpg',
-      bio: 'Tarihin derinliklerinde kaybolma, sosyal bilimlerin mantığını keşfet. Ezber değil, anlayarak öğrenme yolculuğunda rehberin olacağım.',
+      rank: '10.211.ncisi',
+      image: '/images/coaches/mitat-picak.jpg',
+      bio: 'Mühendislik bakış açısıyla fizik ve matematiği hayata geçiriyorum. Teorik bilgiyi pratiğe dönüştürme sanatını öğrenecek, her problemi çözebileceksin.',
       goals: [
-        'Sosyal bilimlere karşı ilgi uyandırmak',
-        'Eleştirel düşünme becerisi geliştirmek',
-        'Araştırma ve analiz yeteneklerini güçlendirmek'
+        'Fizik ve matematik alanında sağlam temel oluşturmak',
+        'Problem çözme stratejileri geliştirmek',
+        'Mühendislik düşüncesi kazandırmak'
       ],
       achievements: [
-        'Sözel 12.ncisi',
-        'Ankara Üniversitesi bölüm birinciliği',
-        '30+ öğrenciyi sosyal bilimler alanına yönlendirme'
+        'Sayısal 10211.ncisi',
       ],
-      teachingApproach: 'Tarihsel olayları sebep-sonuç ilişkileri içinde analiz etmeyi öğretiyorum. Öğrencilerimin ezber yapmak yerine anlayarak öğrenmelerini sağlıyorum.',
-      focusAreas: ['Tarih', 'Coğrafya', 'Sosyal Bilimler', 'Araştırma Teknikleri']
+      teachingApproach: 'Teorik bilgileri pratik uygulamalarla destekliyorum. Öğrencilerimin fizik ve matematik konularını günlük hayattan örneklerle kavramalarını sağlıyorum.',
+      focusAreas: ['Fizik', 'Matematik', 'Mühendislik Temelleri', 'Analitik Düşünme']
     },
     {
-      id: 'can-bulut',
-      name: 'Can Bulut',
-      university: 'İTÜ',
-      department: 'Elektrik-Elektronik Mühendisliği',
-      aytType: 'Sayısal',
-      turkeyRank: 31,
+      id: 'burak-gayretli',
+      name: 'Burak Gayretli',
+      university: 'Boğaziçi Üniversitesi',
+      department: 'Ekonomi',
+      aytType: 'Eşit Ağırlık',
+      turkeyRank: 23,
       year: 2024,
       examType: 'AYT',
-      rank: '31.ncisi',
-      image: '/images/coaches/can-bulut.jpg',
-      bio: 'Teknolojinin geleceğini şekillendiren matematik ve fizik dünyasına hoş geldin. Soyut kavramları somut başarılara dönüştürme zamanı.',
-      goals: [
-        'Matematik ve fizik alanında mükemmellik',
-        'Teknolojiye yönelim sağlamak',
-        'Analitik düşünce yapısı geliştirmek'
-      ],
-      achievements: [
-        'Sayısal 31.ncisi',
-        'İTÜ elektrik-elektronik mühendisliği mezunu',
-        '25+ öğrenciyi mühendislik alanına kazandırma'
-      ],
-      teachingApproach: 'Matematik ve fizik konularını teknolojik uygulamalarla ilişkilendiriyorum. Öğrencilerimin soyut kavramları somut örneklerle anlamalarını sağlıyorum.',
-      focusAreas: ['Matematik', 'Fizik', 'Teknoloji', 'Elektronik Temelleri']
-    },
-    {
-      id: 'zeynep-acar',
-      name: 'Zeynep Acar',
-      university: 'Hacettepe Üniversitesi',
-      department: 'İngiliz Dili ve Edebiyatı',
-      aytType: 'Eşit Ağırlık',
-      turkeyRank: 18,
-      year: 2023,
-      examType: 'AYT',
-      rank: '18.ncisi',
-      image: '/images/coaches/zeynep-acar.jpg',
+      rank: '23.ncüsü',
+      image: '/images/coaches/burak-gayretli.jpg',
       bio: 'Dil öğrenimini eğlenceli bir maceraya dönüştürüyorum. İngilizce ve matematik dengesinde ustalaşarak global dünyaya kapı aralayacaksın.',
       goals: [
         'İngilizce dil yetkinliği geliştirmek',
@@ -163,49 +130,22 @@ export interface Coach {
         'Akademik İngilizce becerilerini güçlendirmek'
       ],
       achievements: [
-        'Eşit Ağırlık 18.ncisi',
-        'Cambridge İngilizce sertifikaları',
-        '40+ öğrenciyi dil bölümlerine yerleştirme'
+        'Eşit Ağırlık 23.ncüsü',
       ],
       teachingApproach: 'Dil öğrenimini eğlenceli ve interaktif hale getiriyorum. Öğrencilerimin hem akademik hem de günlük İngilizce becerilerini geliştirmelerine odaklanıyorum.',
       focusAreas: ['İngilizce', 'Matematik', 'Türkçe', 'Dil Becerileri']
     },
     {
-      id: 'emre-yildirim',
-      name: 'Emre Yıldırım',
-      university: 'Bilkent Üniversitesi',
-      department: 'Matematik',
-      aytType: 'Sayısal',
-      turkeyRank: 9,
-      year: 2024,
-      examType: 'TYT',
-      rank: '9.ncusu',
-      image: '/images/coaches/emre-yildirim.jpg',
-      bio: 'Matematik sadece sayılar değil, mantık ve düşünce sanatıdır. Matematik zekânı keşfet, her problemi çözebilecek güce ulaş.',
-      goals: [
-        'Matematik sevgisi ve yeteneği geliştirmek',
-        'Problem çözme becerilerini maksimuma çıkarmak',
-        'Matematiksel düşünceyi günlük hayata entegre etmek'
-      ],
-      achievements: [
-        'TYT 9.ncusu',
-        'Matematik olimpiyatı milli takım üyesi',
-        '60+ öğrenciyi matematik ve mühendislik alanlarına kazandırma'
-      ],
-      teachingApproach: 'Matematiği sadece formüller değil, mantık ve düşünce sistemi olarak öğretiyorum. Her öğrencinin matematik zekasını keşfetmesine yardımcı oluyorum.',
-      focusAreas: ['İleri Matematik', 'Problem Çözme', 'Mantık', 'Olimpiyat Matematiği']
-    },
-    {
-      id: 'selin-celik',
-      name: 'Selin Çelik',
-      university: 'Gazi Üniversitesi',
-      department: 'Coğrafya',
+      id: 'boarn-tiskiya',
+      name: 'Boran Tiskaya',
+      university: 'Boğaziçi Üniversitesi',
+      department: 'İşletme',
       aytType: 'Eşit Ağırlık',
-      turkeyRank: 25,
-      year: 2023,
+      turkeyRank: 253,
+      year: 2024,
       examType: 'AYT',
-      rank: '25.ncisi',
-      image: '/images/coaches/selin-celik.jpg',
+      rank: '253.ncüsü',
+      image: '/images/coaches/boran-tiskaya.jpg',
       bio: 'Dünyayı keşfet, çevreyi anla, geleceği şekillendir. Coğrafya ve sosyal bilimlerle küresel bakış açısı kazanacak, fark yaratacaksın.',
       goals: [
         'Coğrafya ve çevre bilinci geliştirmek',
@@ -213,7 +153,7 @@ export interface Coach {
         'Sürdürülebilir yaşam konusunda bilinç oluşturmak'
       ],
       achievements: [
-        'Eşit Ağırlık 25.ncisi',
+        'Eşit Ağırlık 253.ncüsü',
         'Çevre projeleri yarışması birinciliği',
         '20+ öğrenciyi coğrafya ve sosyal bilimler alanına yönlendirme'
       ],
@@ -221,41 +161,16 @@ export interface Coach {
       focusAreas: ['Coğrafya', 'Çevre Bilimi', 'Sosyal Bilimler', 'Harita Becerileri']
     },
     {
-      id: 'burak-koc',
-      name: 'Burak Koç',
-      university: 'Ege Üniversitesi',
-      department: 'Kimya Mühendisliği',
-      aytType: 'Sayısal',
-      turkeyRank: 28,
-      year: 2024,
-      examType: 'AYT',
-      rank: '28.ncisi',
-      image: '/images/coaches/burak-koc.jpg',
-      bio: 'Kimyanın büyülü dünyasında moleküllerden çözümlere yolculuk. Laboratuvar deneyimlerimle teorik bilgiyi hayata geçirme sanatını öğreneceksin.',
-      goals: [
-        'Kimya ve matematik alanında uzmanlaşma',
-        'Teorik bilgiyi pratiğe dönüştürme',
-        'Mühendislik yaklaşımı kazandırma'
-      ],
-      achievements: [
-        'Sayısal 28.ncisi',
-        'Kimya mühendisliği sektör deneyimi',
-        '30+ öğrenciyi fen bilimleri alanına kazandırma'
-      ],
-      teachingApproach: 'Kimya konularını laboratuvar deneyimleri ve endüstriyel uygulamalarla zenginleştiriyorum. Öğrencilerimin teorik bilgiyi pratikte görmelerini sağlıyorum.',
-      focusAreas: ['Kimya', 'Matematik', 'Laboratuvar Teknikleri', 'Endüstriyel Uygulamalar']
-    },
-    {
-      id: 'ipek-sahin',
-      name: 'İpek Şahin',
-      university: 'Marmara Üniversitesi',
-      department: 'Psikoloji',
-      aytType: 'Eşit Ağırlık',
-      turkeyRank: 16,
+      id: 'yusuf-ozcan-yasar',
+      name: 'Yusuf Özcan Yaşar',
+      university: 'Koç Üniversitesi',
+      department: 'Medya Görsel Sanatlar',
+      aytType: 'Sözel',
+      turkeyRank: 50,
       year: 2023,
-      examType: 'TYT',
-      rank: '16.ncısı',
-      image: '/images/coaches/ipek-sahin.jpg',
+      examType: 'AYT',
+      rank: '50.ncisi',
+      image: '/images/coaches/yusuf-ozcan-yasar.jpg',
       bio: 'Zihnin gücünü keşfet, motivasyonunu artır, başarıya odaklan. Sınav kaygısını yenecek, özgüvenini kazanacak, hedefine ulaşacaksın.',
       goals: [
         'Öğrenci motivasyonunu artırmak',
@@ -263,63 +178,13 @@ export interface Coach {
         'Pozitif öğrenme ortamı yaratmak'
       ],
       achievements: [
-        'TYT 16.ncısı',
+        'Sözel 50.ncisi',
         'Eğitim psikolojisi sertifikaları',
         '45+ öğrenciye akademik ve kişisel gelişim desteği'
       ],
       teachingApproach: 'Öğrencilerimin psikolojik ihtiyaçlarını göz önünde bulundurarak kişiselleştirilmiş öğrenme stratejileri geliştiriyorum. Motivasyon ve özgüven artırıcı teknikler kullanıyorum.',
       focusAreas: ['Psikoloji', 'Motivasyon Teknikleri', 'Sınav Kaygısı Yönetimi', 'Kişisel Gelişim']
     },
-    {
-      id: 'kerem-aydin',
-      name: 'Kerem Aydın',
-      university: 'Yıldız Teknik Üniversitesi',
-      department: 'Endüstri Mühendisliği',
-      aytType: 'Sayısal',
-      turkeyRank: 35,
-      year: 2024,
-      examType: 'AYT',
-      rank: '35.ncisi',
-      image: '/images/coaches/kerem-aydin.jpg',
-      bio: 'Sistemli çalışma, verimli zaman yönetimi, başarılı sonuçlar. Endüstri mühendisliği perspektifiyle çalışma hayatını optimize edeceksin.',
-      goals: [
-        'Sistemli çalışma alışkanlığı kazandırmak',
-        'Problem çözme hızını artırmak',
-        'Mühendislik bakış açısı geliştirmek'
-      ],
-      achievements: [
-        'Sayısal 35.ncisi',
-        'Endüstri mühendisliği proje deneyimi',
-        '25+ öğrenciyi mühendislik fakültelerine yerleştirme'
-      ],
-      teachingApproach: 'Endüstri mühendisliği perspektifiyle sistemli ve verimli çalışma yöntemleri öğretiyorum. Öğrencilerimin zaman yönetimi becerilerini geliştiriyorum.',
-      focusAreas: ['Matematik', 'Sistem Analizi', 'Zaman Yönetimi', 'Verimlilik Teknikleri']
-    },
-    {
-      id: 'nazli-kurt',
-      name: 'Nazlı Kurt',
-      university: 'Galatasaray Üniversitesi',
-      department: 'Uluslararası İlişkiler',
-      aytType: 'Sözel',
-      turkeyRank: 14,
-      year: 2024,
-      examType: 'TYT',
-      rank: '14.ncüsü',
-      image: '/images/coaches/nazli-kurt.jpg',
-      bio: 'Küresel perspektifle sosyal bilimleri keşfet, analitik düşünce gücünü geliştir. Uluslararası bakış açısıyla geleceğini şekillendir.',
-      goals: [
-        'Sosyal bilimler alanında derinleşme',
-        'Analitik düşünme becerisi geliştirme',
-        'Küresel bakış açısı kazandırma'
-      ],
-      achievements: [
-        'TYT 14.ncüsü',
-        'Çok dilli eğitim sertifikaları',
-        '35+ öğrenciyi sosyal bilimler alanına yönlendirme'
-      ],
-      teachingApproach: 'Uluslararası perspektifle sosyal bilimler konularını ele alıyorum. Öğrencilerimin küresel olayları analiz etme becerilerini geliştiriyorum.',
-      focusAreas: ['Sosyal Bilimler', 'Uluslararası İlişkiler', 'Dil Becerileri', 'Küresel Farkındalık']
-    }
   ];
   
   export const founderCoaches = coaches.filter(coach => coach.isFounder);
