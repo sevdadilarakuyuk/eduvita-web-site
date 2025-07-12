@@ -1,0 +1,447 @@
+.aboutPage {
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, 
+      rgba(37, 99, 235, 0.05) 0%, 
+      rgba(124, 58, 237, 0.05) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .heroSection::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 200px;
+    height: 150px;
+    background: rgba(37, 99, 235, 0.03);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: gentleFloat 8s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .heroSection::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+    width: 120px;
+    height: 120px;
+    background: rgba(124, 58, 237, 0.03);
+    border-radius: 50%;
+    animation: gentleGrow 6s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .heroContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (min-width: 1024px) {
+    .heroContent {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  }
+  
+  .heroText {
+    text-align: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .heroText {
+      text-align: left;
+    }
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+  }
+  
+  .heroImage {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .heroImg {
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px var(--shadow);
+  }
+  
+  /* Mission Section */
+  .missionSection {
+    padding: 4rem 0;
+    background-color: var(--surface);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .missionSection::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    background: rgba(5, 150, 105, 0.03);
+    transform: rotate(45deg);
+    animation: gentleRotate 10s linear infinite;
+    z-index: 0;
+  }
+  
+  .missionSection::after {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    right: 15%;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 60px solid rgba(37, 99, 235, 0.03);
+    animation: gentleBounce 7s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .missionGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .missionGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .missionItem {
+    padding: 2rem;
+    background-color: var(--background);
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px var(--shadow);
+  }
+  
+  .missionTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .missionText {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  
+  /* Values Section */
+  .valuesSection {
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .valuesSection::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: 12%;
+    width: 100px;
+    height: 60px;
+    background: rgba(124, 58, 237, 0.03);
+    border-radius: 50px 20px 50px 20px;
+    animation: gentlePulse 9s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .valuesSection::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    width: 150px;
+    height: 100px;
+    background: rgba(5, 150, 105, 0.03);
+    border-radius: 20% 80% 80% 20% / 50% 50% 50% 50%;
+    animation: gentleFloat 12s ease-in-out infinite reverse;
+    z-index: 0;
+  }
+  
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  
+  .sectionDescription {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .valuesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .valuesGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .valuesGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .valueCard {
+    padding: 2rem;
+    background-color: var(--surface);
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px var(--shadow);
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px var(--shadow);
+    }
+  }
+  
+  .valueIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 50%;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  
+  .valueTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  
+  .valueDescription {
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  
+  /* Story Section */
+  .storySection {
+    padding: 4rem 0;
+    background-color: var(--surface);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .storySection::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    width: 90px;
+    height: 90px;
+    background: rgba(37, 99, 235, 0.03);
+    border-radius: 50%;
+    animation: gentleGrow 8s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .storySection::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    width: 120px;
+    height: 80px;
+    background: rgba(5, 150, 105, 0.03);
+    border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+    animation: gentleFloat 10s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .storyContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (min-width: 1024px) {
+    .storyContent {
+      grid-template-columns: 2fr 1fr;
+      gap: 4rem;
+    }
+  }
+  
+  .storyTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 2rem;
+  }
+  
+  .storyParagraph {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .storyImage {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .storyImg {
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px var(--shadow);
+  }
+  
+  /* Numbers Section */
+  .numbersSection {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .numbersSection::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: gentlePulse 6s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .numbersSection::after {
+    content: '';
+    position: absolute;
+    bottom: 25%;
+    right: 20%;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    transform: rotate(45deg);
+    animation: gentleRotate 15s linear infinite;
+    z-index: 0;
+  }
+  
+  .numbersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .numberItem {
+    text-align: center;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .number {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  
+  .numberLabel {
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+  
+  /* Gentle Animations */
+  @keyframes gentleFloat {
+    0%, 100% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-10px) translateX(5px); }
+  }
+  
+  @keyframes gentleGrow {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  @keyframes gentleRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes gentlePulse {
+    0%, 100% { opacity: 0.03; transform: scale(1); }
+    50% { opacity: 0.06; transform: scale(1.05); }
+  }
+  
+  @keyframes gentleBounce {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  @media (max-width: 767px) {
+    .heroTitle {
+      font-size: 2.5rem;
+    }
+    
+    .sectionTitle {
+      font-size: 2rem;
+    }
+    
+    .storyTitle {
+      font-size: 2rem;
+    }
+    
+    .valuesGrid {
+      grid-template-columns: 1fr;
+    }
+  }

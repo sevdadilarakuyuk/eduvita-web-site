@@ -1,0 +1,172 @@
+.viewport {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    max-height: 100vh;
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .viewport {
+      bottom: 0;
+      right: 0;
+      top: auto;
+      flex-direction: column;
+      max-width: 26rem;
+    }
+  }
+  
+  .toast {
+    position: relative;
+    pointer-events: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: hidden;
+    border-radius: 0.375rem;
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .toast[data-state='open'] {
+    animation: slideIn 0.15s ease-out;
+  }
+  
+  .toast[data-state='closed'] {
+    animation: slideOut 0.15s ease-in;
+  }
+  
+  .toast[data-swipe='move'] {
+    transform: translateX(var(--radix-toast-swipe-move-x));
+  }
+  
+  .toast[data-swipe='cancel'] {
+    transform: translateX(0);
+    transition: transform 0.2s ease-out;
+  }
+  
+  .toast[data-swipe='end'] {
+    animation: swipeOut 0.1s ease-out;
+  }
+  
+  .default {
+    background-color: var(--background);
+    color: var(--text);
+  }
+  
+  .destructive {
+    border-color: #fecaca;
+    color: #dc2626;
+    background-color: #fef2f2;
+  }
+  
+  [data-theme='dark'] .destructive {
+    border-color: #7f1d1d;
+    color: #fca5a5;
+    background-color: #450a0a;
+  }
+  
+  .title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    margin: 0;
+  }
+  
+  .action {
+    display: inline-flex;
+    height: 2rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    padding: 0 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    color: var(--text);
+  }
+  
+  .action:hover {
+    background-color: var(--surface);
+  }
+  
+  .action:focus {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  
+  .action:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    border-radius: 0.375rem;
+    padding: 0.25rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    opacity: 1;
+  }
+  
+  .close:focus {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  
+  .closeIcon {
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(calc(100% + 1rem));
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(100% + 1rem));
+    }
+  }
+  
+  @keyframes swipeOut {
+    from {
+      transform: translateX(var(--radix-toast-swipe-end-x));
+    }
+    to {
+      transform: translateX(calc(100% + 1rem));
+    }
+  }

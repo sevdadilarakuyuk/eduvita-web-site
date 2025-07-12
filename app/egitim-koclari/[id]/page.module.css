@@ -1,0 +1,331 @@
+.coachDetailPage {
+    min-height: 100vh;
+  }
+  
+  .backButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-weight: 500;
+    margin: 2rem 0 1rem;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: var(--primary-dark);
+    }
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    padding: 2rem 0 4rem;
+  }
+  
+  .heroContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  @media (min-width: 1024px) {
+    .heroContent {
+      grid-template-columns: auto 1fr;
+      gap: 4rem;
+    }
+  }
+  
+  .coachImage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .heroImg {
+    border-radius: 1rem;
+    box-shadow: 0 10px 40px var(--shadow);
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .rankBadge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+  }
+  
+  .coachInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .coachName {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0;
+  }
+  
+  .universityInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-secondary);
+  }
+  
+  .universityName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  
+  .department {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+  
+  .achievementInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .aytType {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    width: fit-content;
+  }
+  
+  .rankInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .coachBio {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+  
+  /* Approach Section */
+  .approachSection {
+    padding: 4rem 0;
+    background-color: var(--surface);
+  }
+  
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+  }
+  
+  .approachContent {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .approachText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Details Section */
+  .detailsSection {
+    padding: 4rem 0;
+  }
+  
+  .detailsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .detailsGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .detailCard {
+    background-color: var(--surface);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px var(--shadow);
+  }
+  
+  .detailHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+  }
+  
+  .detailTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+  }
+  
+  .detailList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .detailItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  
+  .detailItem svg {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+  
+  .focusAreas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .focusArea {
+    background-color: var(--background);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--border);
+  }
+  
+  /* Achievements Section */
+  .achievementsSection {
+    padding: 4rem 0;
+    background-color: var(--surface);
+  }
+  
+  .achievementsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .achievementItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--background);
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 10px var(--shadow);
+    color: var(--text);
+    font-weight: 500;
+  }
+  
+  .achievementItem svg {
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+  
+  /* CTA Section */
+  .ctaSection {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+  }
+  
+  .ctaContent {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .ctaTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .ctaDescription {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    background: white;
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .coachName {
+      font-size: 2.5rem;
+    }
+    
+    .sectionTitle {
+      font-size: 2rem;
+    }
+    
+    .ctaTitle {
+      font-size: 2rem;
+    }
+    
+    .detailsGrid {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,140 @@
+.coachesPage {
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, 
+      rgba(37, 99, 235, 0.05) 0%, 
+      rgba(124, 58, 237, 0.05) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .heroSection::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 100%;
+    height: 200%;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232563eb' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    animation: float 20s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .heroContent {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+  }
+  
+  /* Category Sections */
+  .categorySection {
+    padding: 3rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .categorySection:nth-child(even) {
+    background-color: var(--surface);
+  }
+  
+  .categorySection:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%237c3aed' fill-opacity='0.02'%3E%3Cpath d='M40 40l20-20v40l-20-20zm0 0l-20-20v40l20-20z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+    animation: slide 25s linear infinite;
+    z-index: 0;
+  }
+  
+  .categorySection:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -30%;
+    width: 160%;
+    height: 140%;
+    background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23059669' fill-opacity='0.02'%3E%3Cpolygon points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E") repeat;
+    animation: pulse 15s ease-in-out infinite;
+    z-index: 0;
+  }
+  
+  .categoryHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .categoryTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  
+  .categoryDescription {
+    font-size: 1rem;
+    color: var(--text-secondary);
+  }
+  
+  .coachesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-80px); }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.02; }
+    50% { transform: scale(1.1); opacity: 0.04; }
+  }
+  
+  @media (max-width: 767px) {
+    .heroTitle {
+      font-size: 2.5rem;
+    }
+    
+    .categoryTitle {
+      font-size: 1.75rem;
+    }
+    
+    .coachesGrid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
