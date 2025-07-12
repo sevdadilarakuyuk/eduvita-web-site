@@ -358,7 +358,7 @@ export default function Home() {
           </div>
           <div className={styles.foundersGrid}>
             {founderCoaches.map((coach, index) => {
-              if (index === 1) {
+              if (index === 100) {
                 // İkinci kurucudan önce video kartını ekle
                 return (
                   <React.Fragment key={`coach-${coach.id}`}>
