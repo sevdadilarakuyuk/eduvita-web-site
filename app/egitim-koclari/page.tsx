@@ -40,6 +40,23 @@ export default function Coaches() {
         </div>
       </section>
 
+        {/* Eşit Ağırlık Coaches */}
+        <section className={styles.categorySection}>
+        <div className="container">
+          <div className={styles.categoryHeader}>
+            <h2 className={styles.categoryTitle}>Eşit Ağırlık Koçlarımız</h2>
+            <p className={styles.categoryDescription}>
+              Matematik ve Sosyal Bilimler dengesinde uzman koçlarımız
+            </p>
+          </div>
+          <div className={styles.coachesGrid}>
+            {esitAgirlikCoaches.map((coach) => (
+              <CoachCard key={coach.id} coach={coach} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Sözel Coaches */}
       <section className={styles.categorySection}>
         <div className="container">
@@ -57,22 +74,6 @@ export default function Coaches() {
         </div>
       </section>
 
-      {/* Eşit Ağırlık Coaches */}
-      <section className={styles.categorySection}>
-        <div className="container">
-          <div className={styles.categoryHeader}>
-            <h2 className={styles.categoryTitle}>Eşit Ağırlık Koçlarımız</h2>
-            <p className={styles.categoryDescription}>
-              Matematik ve Sosyal Bilimler dengesinde uzman koçlarımız
-            </p>
-          </div>
-          <div className={styles.coachesGrid}>
-            {esitAgirlikCoaches.map((coach) => (
-              <CoachCard key={coach.id} coach={coach} />
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
