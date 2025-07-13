@@ -6,24 +6,24 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'E-posta',
-      value: 'info@eduvita.com',
-      link: 'mailto:info@eduvita.com'
+      value: 'eduvitakocluk@gmail.com',
+      link: 'mailto:eduvitakocluk@gmail.com'
     },
     {
       icon: Phone,
       title: 'Telefon 1',
-      value: '+90 555 123 45 67',
-      link: 'tel:+905551234567',
+      value: '+90 545 245 40 16',
+      link: 'tel:+905452454016',
       hasWhatsApp: true,
-      whatsappLink: 'https://wa.me/905551234567'
+      whatsappLink: 'https://wa.me/905452454016'
     },
     {
       icon: Phone,
       title: 'Telefon 2',
-      value: '+90 555 987 65 43',
-      link: 'tel:+905559876543',
+      value: '+90 533 898 82 25',
+      link: 'tel:+905338988225',
       hasWhatsApp: true,
-      whatsappLink: 'https://wa.me/905559876543'
+      whatsappLink: 'https://wa.me/905338988225'
     },
     {
       icon: MapPin,
