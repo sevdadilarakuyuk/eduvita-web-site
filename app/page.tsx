@@ -216,7 +216,7 @@ export default function Home() {
                   <ArrowRight size={18} />
                 </Link>
                 <a 
-                  href="https://wa.me/905551234567" 
+                  href="https://wa.me/905452454016x" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={styles.whatsappButton}
