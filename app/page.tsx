@@ -108,8 +108,8 @@ export default function Home() {
           <div className={styles.statsGrid}>
             <div className={styles.statItem}>
               <Users className={styles.statIcon} />
-              <div className={styles.statNumber}>38+</div>
-              <div className={styles.statLabel}>Başarılı Öğrenci</div>
+              <div className={styles.statNumber}>1+ yıl</div>
+              <div className={styles.statLabel}>Deneyim</div>
             </div>
             <div className={styles.statItem}>
               <Trophy className={styles.statIcon} />
@@ -118,7 +118,7 @@ export default function Home() {
             </div>
             <div className={styles.statItem}>
               <Target className={styles.statIcon} />
-              <div className={styles.statNumber}>12</div>
+              <div className={styles.statNumber}>7</div>
               <div className={styles.statLabel}>Profesyonel Eğitim Koçu</div>
             </div>
           </div>
